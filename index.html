@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>To Do List</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>My To Do List (Catatan Belanja)</h2>
+        <input
+          type="text"
+          id="inputItem"
+          placeholder="Nama Barang"
+        />
+        <span
+          onclick="newItem()"
+          class="addBtn"
+          >Tambah</span
+        >
+      </div>
+
+      <ul id="listItems">
+        <li>Mie Goreng</li>
+        <li class="checked">Gula Pasir</li>
+        <li>Telur</li>
+        <li>Bawang Merah</li>
+        <li>Minyak Goreng</li>
+        <li>Tepung Terigu</li>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
