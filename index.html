@@ -15,29 +15,78 @@
   <body>
     <div class="container">
       <div class="header">
-        <h2>My To Do List (Catatan Belanja)</h2>
+        <h1>My To Do List</h1>
+        <p
+          id="errorMessage"
+          class="error-message"
+        ></p>
         <input
           type="text"
-          id="inputItem"
-          placeholder="Nama Barang"
+          id="inputText"
+          class="input-text"
+          placeholder="Enter a text..."
         />
-        <span
-          onclick="newItem()"
-          class="addBtn"
-          >Tambah</span
+        <button
+          id="addBtn"
+          class="add-btn"
         >
+          Add Text
+        </button>
       </div>
 
-      <ul id="listItems">
-        <li>Mie Goreng</li>
-        <li class="checked">Gula Pasir</li>
-        <li>Telur</li>
-        <li>Bawang Merah</li>
-        <li>Minyak Goreng</li>
-        <li>Tepung Terigu</li>
-      </ul>
+      <ul id="list"></ul>
+      <div
+        id="pagination"
+        class="pagination"
+      ></div>
     </div>
 
     <script src="script.js"></script>
   </body>
 </html>
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Todo App</title>
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo App</h1>
+      <div
+        id="errorMessage"
+        class="error-message"
+      ></div>
+      <input
+        type="text"
+        id="todoInput"
+        class="todo-input"
+        placeholder="Enter a task..."
+      />
+      <button
+        id="addBtn"
+        class="add-btn"
+      >
+        Add Task
+      </button>
+      <ul
+        id="todoList"
+        class="todo-list"
+      ></ul>
+      <div
+        id="pagination"
+        class="pagination"
+      ></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html> -->
