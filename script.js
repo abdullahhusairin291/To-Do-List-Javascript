@@ -7,8 +7,17 @@ const lists = [];
 const itemPerPage = 5;
 let currentPage = 1;
 
+function showErrorMessage(message) {
+  const errorMessage = document.querySelector('.error-message');
+  errorMessage.textContent = message;
+  errorMessage.style.display = 'block';
+  setTimeout(() => {
+    errorMessage.style.display = 'none';
+  }, 3000);
+}
+
 addBtn.addEventListener('click', () => {
-  const text = inputText.value.trim();
+  const text = inputText.value;
   if (text === '') {
     showErrorMessage('Please enter a text');
     return;
@@ -113,13 +122,4 @@ function deleteText(i) {
   }
   renderLists();
   renderPagination();
-}
-
-function showErrorMessage(message) {
-  const errorMessage = document.querySelector('.error-message');
-  errorMessage.textContent = message;
-  errorMessage.style.display = 'block';
-  setTimeout(() => {
-    errorMessage.style.display = 'none';
-  }, 3000);
 }
